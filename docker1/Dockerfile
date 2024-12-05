@@ -8,7 +8,7 @@ EXPOSE 8080
 WORKDIR /usr/src/app
 
 # Copy the application JAR file into the container
-COPY memoryref/target/memoryref-0.0.2-SNAPSHOT-shaded.jar app.jar
+COPY memoryref/target/memoryref.jar app.jar
 
 # Use ENTRYPOINT to run the JAR file as the container's main process
 ENTRYPOINT ["java", "-jar", "app.jar"]
